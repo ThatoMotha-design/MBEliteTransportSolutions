@@ -39,3 +39,33 @@ This project is a website created for **MB Elite Transport Solutions**, a staff 
 
 ---
 
+## Timeline & Milestones
+| Milestone | Deadline | Details |
+|---|---|---|
+| Proposal | Week 1 | Submit proposal document |
+| Structure | Week 2 | Create sitemap, HTML pages, README.md |
+| Styling | Week 3 | Implement CSS and responsive layout |
+| Forms | Week 4 | Enquiry/contact forms & validation |
+| Testing | Week 5 | Cross-browser tests & fixes |
+| Final | Week 6 | Submit repo & documentation |
+
+---
+
+## References
+- Afrihost (2025). Web Hosting Packages & Pricing.
+- Web development cost benchmarks in South Africa (2024).
+- UX wireframing principles – Interaction Design Foundation.
+-   
+*Full reference list also included in your proposal document.*
+
+---
+
+## How to Run Locally
+1. Open the folder in VS Code.
+2. Open `index.html` in your browser (or use VS Code Live Server).
+3. Navigate using the top menu.
+
+---
+
+## Changelog
+- YYYY-MM-DD: Initial scaffold (HTML pages, CSS, JS, README).
