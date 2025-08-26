@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MB Elite Transport — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header & Navigation (same on all pages) -->
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">MB Elite Transport</div>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="container">
+        <h1>Safe & Reliable Staff Transport</h1>
+        <p>On-time transfers for teams and individuals across Johannesburg.</p>
+        <a class="btn btn-primary" href="enquiry.html">Book / Enquire</a>
+      </div>
+    </section>
+
+    <!-- SERVICES SUMMARY -->
+    <section class="services-summary" aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">Our Core Services</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Staff Transport</h3>
+            <p>Scheduled pickups and drop-offs for your workforce.</p>
+          </article>
+          <article class="card">
+            <h3>Airport Transfers</h3>
+            <p>Reliable, stress-free trips to and from OR Tambo.</p>
+          </article>
+          <article class="card">
+            <h3>Corporate Shuttles</h3>
+            <p>Dedicated shuttles for events, offsites, and conferences.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 id="testimonials-heading">What Clients Say</h2>
+        <blockquote>“On time and professional — made our night shifts easier.” — Site Supervisor</blockquote>
+        <blockquote>“Affordable and reliable for our team.” — Operations Manager</blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> MB Elite Transport Solutions. All rights reserved.</p>
+      <p>Reliable Transport, Trusted Journeys.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
