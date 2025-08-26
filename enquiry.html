@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MB Elite Transport — Enquiry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">MB Elite Transport</div>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="enquiry.html" aria-current="page">Enquiry</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="content-section">
+      <div class="container">
+        <h1>Booking / Enquiry</h1>
+        <!-- Enquiry form with HTML5 validation -->
+        <form class="enquiry-form" onsubmit="return handleEnquirySubmit(event)">
+          <fieldset>
+            <legend>Your Details</legend>
+            <label>Full Name
+              <input type="text" name="name" required placeholder="e.g., Thato Motha" />
+            </label>
+            <label>Email
+              <input type="email" name="email" required placeholder="you@example.com" />
+            </label>
+            <label>Phone
+              <input type="tel" name="phone" required placeholder="+27 ..." />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Trip Details</legend>
+            <label>Pickup Location
+              <input type="text" name="pickup" required placeholder="Address or area" />
+            </label>
+            <label>Drop-off Location
+              <input type="text" name="dropoff" required placeholder="Address or area" />
+            </label>
+            <div class="row">
+              <label>Date
+                <input type="date" name="date" required />
+              </label>
+              <label>Time
+                <input type="time" name="time" required />
+              </label>
+              <label>Passengers
+                <input type="number" name="passengers" min="1" max="20" value="1" required />
+              </label>
+            </div>
+            <label>Additional Notes
+              <textarea name="notes" rows="4" placeholder="Anything we should know?"></textarea>
+            </label>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+        </form>
+        <!-- Note: Front-end only for assignment. -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> MB Elite Transport Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
