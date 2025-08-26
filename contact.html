@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MB Elite Transport — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">MB Elite Transport</div>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="content-section">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <div class="grid-2">
+          <div>
+            <h2>Johannesburg CBD Office</h2>
+            <p>123 Main Street, Johannesburg, 2001</p>
+            <p>Email: info@mbelitetransport.co.za | Phone: +27 11 000 0000</p>
+            <!-- Replace with Google Maps iframe when ready -->
+            <div class="map-placeholder"><p>Map: Johannesburg CBD (Placeholder)</p></div>
+          </div>
+          <div>
+            <h2>Sandton Office</h2>
+            <p>45 Rivonia Road, Sandton, 2196</p>
+            <p>Email: sandton@mbelitetransport.co.za | Phone: +27 11 111 1111</p>
+            <!-- Replace with Google Maps iframe when ready -->
+            <div class="map-placeholder"><p>Map: Sandton (Placeholder)</p></div>
+          </div>
+        </div>
+
+        <h2>Send us a message</h2>
+        <form class="contact-form" onsubmit="return handleContactSubmit(event)">
+          <label>Your Name
+            <input type="text" name="name" required />
+          </label>
+          <label>Your Email
+            <input type="email" name="email" required />
+          </label>
+          <label>Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> MB Elite Transport Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
