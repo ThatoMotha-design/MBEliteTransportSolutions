@@ -32,10 +32,6 @@ This project is a website created for **MB Elite Transport Solutions**, a staff 
 ## Timeline and Milestones  
 - **Week 1–2:** Project Proposal & Research  
 - **Week 3:** Folder Structure & HTML Setup  
-- **Week 4:** Add Content & Navigation  
-- **Week 5:** Testing & Debugging  
-- **Week 6:** GitHub Version Control Setup  
-- **Week 7:** Final Submission  
 
 ---
 
@@ -54,9 +50,9 @@ This project is a website created for **MB Elite Transport Solutions**, a staff 
 ## References
 - Afrihost (2025). Web Hosting Packages & Pricing.
 - Web development cost benchmarks in South Africa (2024).
-- UX wireframing principles – Interaction Design Foundation.
--   
-*Full reference list also included in your proposal document.*
+- UX wireframing principles – Interaction Design Foundation.'
+-  Youtube - The Code City- How to upload Project to Github Uisng Visual Studio Code(2024)
+
 
 ---
 
@@ -68,4 +64,6 @@ This project is a website created for **MB Elite Transport Solutions**, a staff 
 ---
 
 ## Changelog
-- YYYY-MM-DD: Initial scaffold (HTML pages, CSS, JS, README).
+- 2025-08-27: Initial scaffold (HTML pages, CSS, JS, README).
+- **v1.0:** Initial folder structure created  
+- **v1.1:** Added HTML pages and navigation links  
