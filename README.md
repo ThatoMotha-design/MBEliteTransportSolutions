@@ -67,3 +67,34 @@ This project is a website created for **MB Elite Transport Solutions**, a staff 
 - 2025-08-27: Initial scaffold (HTML pages, CSS, JS, README).
 - **v1.0:** Initial folder structure created  
 - **v1.1:** Added HTML pages and navigation links  
+
+---
+
+## Design and Responsive Features  
+
+- **Color Scheme:**  
+  - Primary: #004080 (dark blue)  
+  - Secondary: #f8f9fa (light grey background)  
+  - Accent: White text with subtle highlights  
+
+- **Typography:**  
+  - Font: Arial, sans-serif  
+  - Hierarchy:  
+    - Headings (h1, h2): Bold, blue or white (on hero section)  
+    - Paragraphs: Standard dark grey  
+
+- **Layout & Responsiveness:**  
+  - Flexbox used for navbar and content alignment  
+  - Hero section uses full-width background image with overlay text  
+  - Responsive breakpoints:  
+    - Tablets (≤768px): Navbar stacks vertically, text resizes  
+    - Mobile (≤480px): Larger touch-friendly spacing, smaller font sizes  
+
+---
+
+## Changelog (Updated)  
+- **v1.0:** Initial project setup with index.html and README  
+- **v1.1:** Added about.html, services.html, enquiry.html, and contact.html  
+- **v1.2:** Linked pages with navigation  
+- **v1.3:** Created CSS file with global styling  
+- **v1.4:** Added responsive design for mobile and tablet views  

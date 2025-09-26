@@ -1,0 +1,101 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body & Fonts ===== */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background: url('../images/hero.jpg') no-repeat center center/cover;
+  color: white;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  background-color: rgba(0,0,0,0.5);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* ===== Content Sections ===== */
+section {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
