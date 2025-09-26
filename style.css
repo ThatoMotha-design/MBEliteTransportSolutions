@@ -1,101 +1,80 @@
-/* ===== Global Reset ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ===============================
+   MB Elite Transport - Base Styles
+   Palette: Navy (#001f3f), Gold (#FFD700), White (#ffffff)
+   Fonts: Montserrat (headings), Open Sans (body)
+   =============================== */
+:root {
+  --navy: #001f3f;
+  --gold: #ffd700;
+  --white: #ffffff;
+  --text: #222222;
+  --muted: #6b7280;
 }
 
-/* ===== Body & Fonts ===== */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: var(--text);
+  background: #fafafa;
   line-height: 1.6;
-  background-color: #f8f9fa;
-  color: #333;
 }
 
-/* ===== Navigation Bar ===== */
-nav {
-  background-color: #004080;
-  color: white;
-  padding: 1rem;
+.container { width: min(1100px, 92%); margin: 0 auto; }
+
+/* Header/Nav */
+.site-header { background: var(--navy); color: var(--white); position: sticky; top: 0; z-index: 10; }
+.site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 0; }
+.brand { font-family: Montserrat, sans-serif; font-weight: 800; letter-spacing: 0.5px; }
+.main-nav a { color: var(--white); text-decoration: none; margin-left: 1rem; font-weight: 600; }
+.main-nav a:hover { text-decoration: underline; }
+.menu-toggle { display: none; background: transparent; border: 1px solid var(--white); color: var(--white); padding: 0.2rem 0.6rem; border-radius: 6px; }
+
+/* Footer */
+.site-footer { background: #0b2347; color: var(--white); margin-top: 3rem; padding: 1.5rem 0; font-size: 0.95rem; }
+
+/* Hero */
+.hero { background: linear-gradient(180deg, #0b2347, #0b2347); color: var(--white); padding: 4rem 0; text-align: center; }
+.hero .btn { margin-top: 1rem; }
+
+/* Buttons */
+.btn { display: inline-block; padding: 0.7rem 1.2rem; border-radius: 10px; border: none; background: #e5e7eb; color: #111827; text-decoration: none; font-weight: 600; }
+.btn-primary { background: var(--gold); color: #1f2937; }
+.btn:hover { opacity: 0.9; }
+
+/* Sections */
+.content-section, .services-summary, .testimonials { padding: 2.5rem 0; }
+h1, h2, h3 { font-family: Montserrat, sans-serif; line-height: 1.2; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; margin-top: 0; }
+h3 { font-size: 1.15rem; }
+
+/* Cards grid */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.card { background: var(--white); border: 1px solid #e5e7eb; border-radius: 12px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+
+/* Forms */
+form label { display: block; margin: 0.6rem 0; }
+input, textarea, select {
+  width: 100%; padding: 0.6rem 0.7rem;
+  border-radius: 10px; border: 1px solid #d1d5db; font-size: 1rem;
+}
+fieldset { border: 1px solid #e5e7eb; border-radius: 12px; padding: 1rem; margin-bottom: 1rem; }
+legend { padding: 0 0.25rem; color: var(--muted); }
+.row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
+.contact-form { margin-top: 1rem; }
+.map-placeholder {
+  height: 180px; border-radius: 12px; border: 1px dashed #94a3b8;
+  display: grid; place-items: center; color: #475569; background: #f8fafc;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
+/* Utilities */
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
 
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* ===== Hero Section ===== */
-.hero {
-  background: url('../images/hero.jpg') no-repeat center center/cover;
-  color: white;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  background-color: rgba(0,0,0,0.5);
-  padding: 1rem;
-  border-radius: 8px;
-}
-
-/* ===== Content Sections ===== */
-section {
-  padding: 2rem;
-  max-width: 1100px;
-  margin: auto;
-}
-
-h2 {
-  color: #004080;
-  margin-bottom: 1rem;
-}
-
-/* ===== Footer ===== */
-footer {
-  background: #004080;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-/* ===== Responsive Design ===== */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  body {
-    font-size: 14px;
-  }
+/* Responsive */
+@media (max-width: 800px) {
+  .main-nav { display: none; }
+  .main-nav.open { display: block; }
+  .menu-toggle { display: inline-block; }
+  .row { grid-template-columns: 1fr; }
 }
